@@ -33,3 +33,6 @@ jobs:
 
     - name: Build Docker Imgae
       run: docker build -t nabihaakhann/github-actions-docker-java-app:0.0.2.Release .
+
+    - name: Push Docker Image
+      run: docker push nabihaakhann/github-actions-docker-java-app:0.0.2.Release
