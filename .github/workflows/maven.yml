@@ -30,4 +30,6 @@ jobs:
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-        
+
+    - name: Build Docker Imgae
+      run: docker build -t nabihaakhann/github-actions-docker-java-app:0.0.2.Release .
